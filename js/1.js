@@ -8,9 +8,11 @@ for (let i=0; i<5; i++){
 
 console.log("-----------")
 let newAr=chisla.filter((index)=>(index>0 && index<10));
+let finAr=newAr.reduce((sum=0, elem)=>sum+=elem);
 
 
-for (let i=0; i<newAr.length; i++){
-    sum+=newAr[i];
-}
-console.log(sum)
+// for (let i=0; i<newAr.length; i++){
+//     sum+=newAr[i];
+// }
+// console.log(sum)
+console.log(finAr)
